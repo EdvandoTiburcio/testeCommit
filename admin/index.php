@@ -1,4 +1,5 @@
 <?php
+// criando uma conexão com  conect server
 include("../conexao.php");
 ?>
 <!DOCTYPE html>
@@ -6,13 +7,17 @@ include("../conexao.php");
 <html>
     <head>
         <meta charset="UTF-8">
+     
         <title></title>
         <style>
+            
             @import url("../css/main.css");
         </style>
+        <!-- validando campos<!-- Este é um comentário --> -->
         <script type="txt/javascript">
             function validar(){
                 var msg="";
+                
                 if(document.getElementByID("idMercadoria").value.legth <=0 {
                     msg += "Preencha o Código da mercadoria .\n ";
             }
@@ -34,8 +39,13 @@ include("../conexao.php");
     </head>
     <body>
         <div id="Cadastro">
+            
+        <!-- criando os campos podendo muda-los para qualquer posição -->
         
             <form name="frmNegocio"method="GET"action="index.php" onsubmit="return validar();">
+                
+                <!-- aplicando css -->
+                
             <fieldset>
             <legend>Dados do Produto</legend>
         
@@ -65,6 +75,8 @@ include("../conexao.php");
             <br/><br/>
             <label for ="Tipo de Negócio">  Tipo de Negócio:</label>
              <select name="selecione"id="selecione">
+                 
+             <!-- aqui poderia ser qualquer opçao estes foram só para ter uma idéia -->
              
                 <option value="0">---Selecione---</option>
                 <option value="CO">Comprar</option>
@@ -79,6 +91,7 @@ include("../conexao.php");
             <input type="submit"valeue="Confirmar"/>
         
             <input type="reset"valeue="Limpar"/>
+            
             </fieldset>
         </div>          
         </form>

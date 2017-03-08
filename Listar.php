@@ -1,5 +1,5 @@
 <?php
-
+// seria para cria o repertorio que receberia o sql mas não conclui.
 include "conexao.php";
 ?>
 <html>
@@ -23,7 +23,7 @@ include "conexao.php";
                      ?>
                        <li><?php echo $exibir[""]?></li>
                     <?php
-                    }
+                    
                     ?>
                 </ul>
             </fieldset>
